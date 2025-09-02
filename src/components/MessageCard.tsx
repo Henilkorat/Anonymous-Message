@@ -1,8 +1,6 @@
   'use client'
 
   import React, { useState } from 'react';
-  import axios, { AxiosError } from 'axios';
-  import { toast } from 'sonner';
   import dayjs from 'dayjs';
   import { X } from 'lucide-react';
   import { Message } from '@/Model/user';
@@ -19,7 +17,6 @@
     AlertDialogTrigger,
   } from '@/components/ui/alert-dialog';
   import { Button } from './ui/button';
-  import { ApiResponse } from '@/types/ApiResponse';
 
   type MessageCardProps = {
     message: Message;
